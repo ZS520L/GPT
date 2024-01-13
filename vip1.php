@@ -4,13 +4,15 @@ $file_path = "vip1.txt";//剩余次数保存在这里
 
 $http_code = 0;
 $baseurl = getenv('baseurl');
+$api_url = getenv('api_url');
+$api_key = getenv('api_key');
 // ignore_user_abort(true);
 
 function chat($data,$model){
     global $http_code,$file_path;
     
     $headers = [
-        "Authorization: Bearer sk-MK2gSe0zo7OR4CLA2b845c2dD4Bb47AbAe13084d7688A69e",
+        "Authorization: Bearer " . $api_key,
         "Content-Type: application/json",
     ];
     $reqdata = [
@@ -19,7 +21,7 @@ function chat($data,$model){
         'stream' => true
     ];
     
-    $ch = curl_init("https://api1.zhtec.xyz/v1/chat/completions");
+    $ch = curl_init($api_url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
