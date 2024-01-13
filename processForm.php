@@ -1,5 +1,6 @@
 <?php
 session_start();
+$baseurl = getenv('baseurl');
 
 if (isset($_POST['submit'])) {
     function generateRandomString($length = 10) {
@@ -59,7 +60,7 @@ if (isset($_POST['submit'])) {
     // 调用函数，生成指定数量的文件，并指定写入的内容
     $num_files = intval($_POST['num_files']);
     $content = $_POST['content'];
-    $generated_links = generateFiles('https://api.zhtec.xyz/update', $num_files, $content);
+    $generated_links = generateFiles($baseurl, $num_files, $content);
 
     // 将生成的卡密链接保存到 session
     $_SESSION['generated_links'] = $generated_links;
