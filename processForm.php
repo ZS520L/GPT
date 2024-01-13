@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
             // 检查文件是否存在，如不存在则创建
             if (!file_exists($php_file)) {
                 touch($php_file);
-                $output .= "{$baseurl}/{$php_file}\n";
+                $output .= "{$baseurl}{$php_file}\n";
             }
 
             if (!file_exists($txt_file)) {
