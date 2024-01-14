@@ -9,7 +9,7 @@ $api_key = getenv('api_key');
 // ignore_user_abort(true);
 
 function chat($data,$model){
-    global $http_code,$file_path;
+    global $http_code,$file_path,$api_url,$api_key;
     
     $headers = [
         "Authorization: Bearer " . $api_key,
