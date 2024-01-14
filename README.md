@@ -15,3 +15,9 @@
 小海Chat官网：https://api1.zhtec.xyz
 
 系统截图：https://uvllkvq4dq1.feishu.cn/docx/S9fOdCrHHoyDkGxy0XfcAY48ncb
+[图片]
+[图片]
+[图片]
+[图片]
+[图片]
+[图片]
