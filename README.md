@@ -10,8 +10,8 @@
 - 支持gpt-4-v、gpt-4-dalle、gpt-4-all等官网最新模型，以及GPTs全系列！
 - 无需配置，一键跳转到对话界面，超省心，对小白超级友好
 
-体验网址：https://shop.zhtec.xyz
-
 小海Chat官网：https://api1.zhtec.xyz
+
+体验网址：https://shop.zhtec.xyz
 
 系统截图：https://uvllkvq4dq1.feishu.cn/docx/S9fOdCrHHoyDkGxy0XfcAY48ncb
